@@ -1,0 +1,4 @@
+GdR
+===
+
+Grātus dīcere Regere 
