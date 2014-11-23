@@ -1,0 +1,3 @@
+Mit Chunked Encoding kann der Server die Daten zerstückelt schicken und nicht am stück. Daher entfällt die größenangabe am Anfang, über die gesammten Daten die geschickt werden soll. Anstatt dieser Angabe werden zu jedem Teilstück das verschickt wird die Größe diesen einen Teilstücks mitgeteilt. Damit der Client dennoch erkennt wann es alle Daten hat schickt der Server einen letzten Chunk mit der länge 0 also ohne Payload.
+
+Vorteil von diesem Verfahren ist das der Server Daten schicken kann ohne zu wissen wie viele Daten es zu schicken hat. z.B wenn die Daten noch nicht volständig vor liegen. So Spart man sich die Wartezeit, weil die Daten final vorliegen bis die ersten Chunks verschikt worden sind.
