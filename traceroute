@@ -1,0 +1,66 @@
+$ traceroute www.google.de
+traceroute to www.google.de (173.194.113.127), 30 hops max, 60 byte packets
+TTL Wert | Name vom Rechner an dem die TTL den wert 0 erreichte | die IP | trip time versuch 1 | versuch 2 | versuch 3
+ 1  209-gw-vrrp2.rz.uni-ulm.de (134.60.209.2)  0.409 ms  0.475 ms  0.532 ms
+ 2  cdrip-core-int.rz.uni-ulm.de (134.60.112.244)  0.381 ms  0.485 ms  0.560 ms
+ 3  Ulm-N25-1-10GE-0-1-0-3.belwue.net (129.143.87.113)  0.724 ms  0.716 ms  0.798 ms
+ 4  Heidelberg-RZ-1-10GE-0-0-0-0.belwue.net (129.143.59.66)  5.491 ms  5.501 ms  5.494 ms
+ 5  Mannheim-RZ-1-10GE-0-1-0-1.belwue.net (129.143.58.97)  5.945 ms  5.934 ms  5.970 ms
+ 6  Frankfurt-DECIX-1-10GE-0-1-0-0.belwue.net (129.143.57.174)  6.911 ms  6.816 ms Frankfurt-DECIX-1-10GE-0-2-0-0.belwue.net (129.143.59.202)  6.902 ms
+Versuch 3 kam an DECIX-1-10GE-0-2-0-0.belwue.net 
+ 7  de-cix20.net.google.com (80.81.193.108)  7.720 ms  7.707 ms  7.689 ms
+ 8  209.85.251.150 (209.85.251.150)  7.066 ms  8.369 ms  8.338 ms
+ 9  209.85.243.233 (209.85.243.233)  7.370 ms  7.465 ms  7.667 ms
+10  fra02s22-in-f31.1e100.net (173.194.113.127)  7.019 ms  7.048 ms  7.015 ms
+
+$ traceroute www.inria.fr
+traceroute to www.inria.fr (128.93.162.84), 30 hops max, 60 byte packets
+ 1  209-gw-vrrp2.rz.uni-ulm.de (134.60.209.2)  5.640 ms  5.636 ms  5.718 ms
+ 2  cdrip-core-int.rz.uni-ulm.de (134.60.112.244)  0.417 ms  0.424 ms  0.570 ms
+ 3  Ulm-N25-1-10GE-0-1-0-3.belwue.net (129.143.87.113)  0.756 ms  0.745 ms  0.738 ms
+ 4  Ulm-N26-1-10GE-0-0-0-0.belwue.net (129.143.57.10)  0.757 ms Stuttgart-AL30-1-10GE-0-1-0-0.belwue.net (129.143.57.69)  1.757 ms  1.752 ms
+ 5  Stuttgart-NWZ-1-10GE-0-3-0-1.belwue.net (129.143.59.34)  1.705 ms Stuttgart-NWZ-1-10GE-0-1-0-2.belwue.net (129.143.59.85)  1.792 ms  1.853 ms
+ 6  Karlsruhe-RZ-1-10GE-0-0-0-1.belwue.net (129.143.59.210)  2.967 ms Karlsruhe-RZ-1-10GE-0-1-0-1.belwue.net (129.143.59.214)  3.169 ms  3.160 ms #Netzübergang aus dem Belwue netz
+ 7  cr-fra1-te0-0-0-3.x-win.dfn.de (188.1.238.101)  10.229 ms  10.024 ms  10.383 ms
+ 8  dfn.mx1.fra.de.geant.net (62.40.124.217)  8.745 ms  8.721 ms  8.721 ms #Frankfurt Genf Link
+ 9  ae1.mx1.gen.ch.geant.net (62.40.98.108)  17.167 ms  17.095 ms  17.059 ms #Genf Paris Link
+10  ae4.mx1.par.fr.geant.net (62.40.98.152)  30.379 ms  30.307 ms  30.311 ms
+11  renater-LB1-gw.mx1.par.fr.geant.net (62.40.124.70)  34.713 ms  32.699 ms  32.321 ms
+12  te1-1-paris1-rtr-021.noc.renater.fr (193.51.177.25)  30.607 ms  30.566 ms  30.636 ms
+13  * * * #Der Hop sendet kein ICMP Time exceeded Paket zurück
+14  inria-rocquencourt-gi3-2-inria-rtr-021.noc.renater.fr (193.51.184.177)  30.962 ms  30.973 ms  30.966 ms
+15  * * * #Der Hop sendet kein ICMP Time exceeded Paket zurück
+16  ezp3.inria.fr (128.93.162.84)  31.310 ms  31.251 ms  31.338 ms
+
+$ traceroute hpu.edu
+traceroute to hpu.edu (198.199.136.135), 30 hops max, 60 byte packets
+ 1  209-gw-vrrp2.rz.uni-ulm.de (134.60.209.2)  0.391 ms  0.477 ms  0.556 ms
+ 2  cdrip-core-int.rz.uni-ulm.de (134.60.112.244)  0.347 ms  0.405 ms  0.516 ms
+ 3  Ulm-N25-1-10GE-0-1-0-3.belwue.net (129.143.87.113)  0.986 ms  0.983 ms  0.974 ms
+ 4  Stuttgart-AL30-1-10GE-0-1-0-0.belwue.net (129.143.57.69)  2.207 ms  2.198 ms  2.188 ms
+ 5  te-7-2.car2.Munich1.Level3.net (62.140.25.105)  4.947 ms  5.054 ms  5.128 ms
+ 6  ae-2-52.edge3.Washington12.Level3.net (4.69.146.219)  96.918 ms  98.557 ms  98.429 ms #München US Link
+ 7  ge-13-0.miamfl6lcx1.wcg.Level3.net (4.68.111.214)  99.009 ms  100.721 ms  100.438 ms 
+ 8  hnl1-ar1-xe-11-0-0-0.us.twtelecom.net (206.222.119.241)  210.951 ms  210.916 ms  211.300 ms #Honolulu Link
+ 9  66-193-154-142.static.twtelecom.net (66.193.154.142)  211.675 ms  211.168 ms  212.400 ms
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
