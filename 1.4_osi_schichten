@@ -1,0 +1,14 @@
+Schicht 7 – Anwendungsschicht (Application Layer)
+Die schnittstelle das Netzwerkstacks zu den Anwendungsprogrammen. Hier kommen die Daten rein und raus.
+Schicht 6 – Darstellungsschicht (Presentation Layer)
+Ist eine Abstraktionsschicht für die Datendarstellung z.B Encoding bei Text. In dieser schicht könnte eine Transportverschlüsslung eingebaut werden ohne das die höheren oder tieferne Schichten beeinflusst würden.
+Schicht 5 – Sitzungsschicht (Session Layer)
+Ermöglicht eine persistente Verbindung so das wenn die Transportschicht-Verbindung abgebrochen war, Sitzungsschicht-Verbindung weiter machen kann ohne einen neue Sitzungsschicht-Verbindung aufgebaut werden muss.
+Schicht 4 – Transportschicht (Transport Layer)
+Bietet eine Ende-zu-Ende Transport also einen Netzwerk FIFO, im gegensatz zu Schicht 3. Um das zu erreichen stell es sicher das die Daten die Verchickt worden sind auch ankommen und Korrekt sind.
+Schicht 3 – Vermittlungsschicht (Network Layer)
+Diese Schicht ist für die "Wegfindung" (Routing) zuständig. Sie ermittelt die nächste Station wohin die Daten hin müssen. Daher fällt auch die Netzwerk adressierung in diese Schicht.
+Schicht 2 – Sicherungsschicht (Data Link Layer)
+"Sicher" die Daten von Schicht 1 ab, d.h Kontrolliert die Daten (mit Prüfsummen) aus der 1.Schicht und beim Senden Verpackt sie die Daten in passende Frames (richtige größe und Prüfsumme bilden) so das die Schicht 1 diese verschicken kann.
+Schicht 1 – Bitübertragungsschicht (Physical Layer)
+Diese Schicht kümmert sich um die Tatsächlichen Transport (der Bits), über pysikalische medien. Die ist deshalb Hardware abhängig, weil das Sendeverfahren vom benutzten Medium abhangt.
