@@ -1,0 +1,3 @@
+Das Schichtenmodell macht es leichter Netzwerkanwendungen zuentwickeln, da man die einzelnen Schritte bei der Komunikation, in insich abgeschlossenen Schichten verpackt. So kann man die Problemme in den einzelnen Schichten unabhängig von den restlichen Schichten lösen. Somit reicht es aus das Problem in einer Schicht einmal zu lösen und es funktioniert mit allen höheren Schichten.
+
+Mit logischen schnittstellen einmal nach unten und nach oben. Diese wären z.B die TCP/UDP Ports, IP Sockets.
