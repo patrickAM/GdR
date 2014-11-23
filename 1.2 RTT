@@ -1,0 +1,6 @@
+Der Round-Trip-Time (kurz RTT) beschreibt die benötigte Zeit, dass ein Paket vom Client zum Server und zurück zum Client benötigt.
+Einflussfaktoren für den RTT:
+•	Entfernung von der Quelle zum Ziel
+•	Auslastung der Leitung, Wartezeiten bis die Leitung wieder zum Senden frei ist
+•	Unterschiedliche Übertragungsmedien haben unterschiedliche Signallaufzeiten
+
