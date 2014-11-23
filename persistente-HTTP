@@ -1,0 +1,24 @@
+nicht Presistent
+HTTP kein keep-alive
+1 HTML 40ms + 100ms
+2 Bild1 40ms + 100ms
+3 Bild2 40ms + 100ms
+4 Bild3 40ms + 100ms
+5 Bild4 40ms + 100ms
+6 Bild5 40ms + 100ms
+
+Insgesammt  840ms
+
+Presistent
+HTTP keep-alive bei der ersten anfrage nach der HTML Datei
+
+1 HTML 40ms + 100ms
+2 Bild1 100ms
+3 Bild2 100ms
+4 Bild3 100ms
+5 Bild4 100ms
+6 Bild5 100ms
+
+Insgesammt  640ms
+
+Die Presistent HTTP Verbindung braucht ca. 24% weniger Zeit als die nicht-Presistent HTTP Verbindung.
