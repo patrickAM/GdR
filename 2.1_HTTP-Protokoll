@@ -1,0 +1,2 @@
+Das HTTP-Protokoll ist ein Anwendungsprotokoll, daher wird sie von Anwendungen aufgerufen.
+Bei HTTP verlangt der _Client_ eine Ressource vom _Server_ an. Und weil HTTP zustandlos ist und ein "pull" Protokoll ist (es wird nur nach einer Ressource verlangt), gibt es keinen Anwendungsfall in der der Server eine Verbindung aufbauen müsste ("pull" Protokoll) bzw. könnte da der HTTP-Server vor dem Verbindungsaufbau den Client nicht kennt (Zustandlos).
