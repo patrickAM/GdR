@@ -1,0 +1,22 @@
+Leitungsvermittelte Netzwerke:
+Vorteile:
+•	konstante Übertragungsgeschwindigkeit
+•	konstante Latenz
+•	konstante Verbindungsgeschwindigkeit
+•	keine Datenverluste (ist allerdings von der Definition des Leitungsvermittelten Netzwerkes abhängig)
+
+Nachteile:
+•	Übertragungsrate wird verschwendet wenn reservierte Leitungen nicht genutzt werden
+•	Ungenutzte Kapazität geht verloren, da die Zuweisung der Nutzung der Leitung unabhängig vom eigentlichen Bedarf ist
+•	Leitungsanzahl und Übertragungsrate sind voneinander unabhängig, also bleibt die Übertragung auch bei steigender Bandbreite bei derselben Geschwindigkeit
+
+Paketvermittelte Netzwerke
+Vorteile:
+•	Bessere Bandbreitenaufteilung
+•	kostengünstigere und effizientere Implementierung als bei Leitungsvermittelten
+•	User sind unterschiedlich aktiv. Deren ungenutzte Ressourcen können anderen Usern die sie in dem Moment benötigen zur Verfügung gestellt werden
+•	ist sinnvoll wenn das Netzwerk von vielen Usern genutzt wird
+
+Nachteile:
+•	Paketvermittelte Netzwerke sind bei Echtzeitdiensten wie Telefonie oder Videokonferenzen nicht geeignet, da Verzögerungen den Verkehr unterbrechen können.
+•	Es gibt viele verschiedene Verzögerungsarten(Warteschlangenverzögerung, Übertragungsverzögerung, etc.) und es können Paketverluste entstehen.
