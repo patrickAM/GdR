@@ -1,0 +1,2 @@
+Das ISO/OSI-Modells hat bekanntermaßen keine 8 schichten. Und die oberstenschichten sind die Anwendungsschicht, die vom Anwender/User aufgerufen werden können. Somit liegen sie unter der "Schicht der Anwender/User", die wird Layer 8 genannt da es beim OSI-Schichten die nächste Schicht wäre.
+Und ein Layer8-Problem wäre ein Problem beim Anwender/User gemeint, also ein Fehlverhalten vom Anwender.
